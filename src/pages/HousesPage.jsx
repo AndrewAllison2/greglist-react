@@ -1,9 +1,22 @@
-import React from 'react'
+import { observer } from "mobx-react"
+import React from "react"
 
-const HousesPage = () => {
+
+function HousesPage() {
+
+  async function getHouses() {
+    try {
+      console.log('getting houses')
+      await
+    }
+  }
+
+
   return (
-    <div>HousesPage</div>
+    <div>
+      <h1>Houses Page</h1>
+    </div>
   )
 }
 
-export default HousesPage
+export default observer(HousesPage)
