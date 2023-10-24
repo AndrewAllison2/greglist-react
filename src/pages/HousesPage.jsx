@@ -19,7 +19,7 @@ function HousesPage() {
 
   let houses = (AppState.houses.map(h => {
     return (
-    <div className="col-3 my-3" key={h.id}>
+    <div className="col-4 my-3" key={h.id}>
       <HouseCard house={h} />
       </div>
     )
@@ -34,11 +34,11 @@ function HousesPage() {
   return (
     <section>
       <div className="container">
+      <h1 className="text-center text-decoration-underline mb-4">Houses for Sale</h1>
         <div className="row">
       {houses}
         </div>
       </div>
-      <h1 className="text-center text-decoration-underline mb-4">Houses for Sale</h1>
     </section>
   )
 }

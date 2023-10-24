@@ -15,11 +15,16 @@ export default function HouseCard({ house }) {
         <div className="card-body">
           <div className="d-flex justify-content-between">
 
-          <p><b>{house.bedrooms} bed {house.bathrooms} bath { house.levels}</b></p>
+          <p><b>{house.bedrooms} Bed {house.bathrooms} Bath {house.levels} Story Home</b></p>
+          <p>$ { house.price}</p>
             {/* <div className={AppState.car?.id == car.id ? "d-flex justify-content-between" : "d-none"} >
               <button className="btn ms-1" type="button" onClick={removeHouse} title="Delete Car!"><span>✖️</span></button>
             </div> */}
-          </div>
+        </div>
+        <div>
+          <p>{house.description}</p>
+          <p>Built In: { house.year}</p>
+        </div>
         </div>
       </div>
   )
