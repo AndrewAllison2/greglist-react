@@ -8,7 +8,7 @@ class HousesService {
     const res = await api.get('api/houses')
     console.log('got houses', res.data)
     AppState.houses = res.data.map(h => new House(h))
-    console.log('appstate houses', AppState.houses)
+    // console.log('appstate houses', AppState.houses)
   }
 
 }

@@ -2,6 +2,7 @@ import { observer } from "mobx-react"
 import React, { useEffect } from "react"
 import { housesService } from "../services/HousesService.js"
 import Pop from "../utils/Pop.js"
+import { AppState } from "../AppState.js"
 
 
 function HousesPage() {
@@ -14,6 +15,12 @@ function HousesPage() {
       Pop.error(e)
     }
   }
+
+  let houses = (AppState.houses.map(h => {
+    <div className="col-3 my-3">
+      Houses go here
+    </div>
+  }))
 
 
     useEffect(() => {
