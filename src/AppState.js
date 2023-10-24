@@ -14,6 +14,8 @@ class ObservableAppState {
   /** @type {import('./models/Car.js').Car} */
   car = null
 
+  houses = []
+
   posts = []
   newer = null
   older = null

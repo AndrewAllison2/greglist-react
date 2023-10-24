@@ -1,5 +1,5 @@
 import { observer } from "mobx-react"
-import React from "react"
+import React, { useEffect } from "react"
 import { housesService } from "../services/HousesService.js"
 import Pop from "../utils/Pop.js"
 
@@ -14,6 +14,11 @@ function HousesPage() {
       Pop.error(e)
     }
   }
+
+
+    useEffect(() => {
+    getHouses()
+  }, [])
 
 
   return (
