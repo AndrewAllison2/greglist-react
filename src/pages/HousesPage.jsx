@@ -3,6 +3,7 @@ import React, { useEffect } from "react"
 import { housesService } from "../services/HousesService.js"
 import Pop from "../utils/Pop.js"
 import { AppState } from "../AppState.js"
+import HouseCard from "../components/HouseCard.jsx"
 
 
 function HousesPage() {
@@ -17,9 +18,11 @@ function HousesPage() {
   }
 
   let houses = (AppState.houses.map(h => {
-    <div className="col-3 my-3">
-      Houses go here
-    </div>
+    return (
+    <div className="col-3 my-3" key={h.id}>
+      <HouseCard house={h} />
+      </div>
+    )
   }))
 
 
@@ -29,9 +32,14 @@ function HousesPage() {
 
 
   return (
-    <div>
-      <h1>Houses Page</h1>
-    </div>
+    <section>
+      <div className="container">
+        <div className="row">
+      {houses}
+        </div>
+      </div>
+      <h1 className="text-center text-decoration-underline mb-4">Houses for Sale</h1>
+    </section>
   )
 }
 
