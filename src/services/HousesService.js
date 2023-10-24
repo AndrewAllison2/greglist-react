@@ -1,6 +1,9 @@
 
 
 class HousesService {
+  getHouses() {
+    throw new Error("Method not implemented.");
+  }
 
 }
 
