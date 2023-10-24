@@ -34,7 +34,7 @@ function HousesPage() {
   return (
     <section>
       <div className="container">
-      <h1 className="text-center text-decoration-underline mb-4">Houses for Sale</h1>
+      <h1 className="text-center text-decoration-underline mb-4 mt-3">Houses for Sale</h1>
         <div className="row">
       {houses}
         </div>

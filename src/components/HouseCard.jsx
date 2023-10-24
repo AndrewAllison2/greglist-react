@@ -1,6 +1,7 @@
 import  PropTypes from "prop-types";
 import { House } from "../models/House.js";
 import React from "react";
+import './styles/HouseCard.scss';
 
 
 
