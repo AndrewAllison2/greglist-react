@@ -33,6 +33,9 @@ export function Navbar() {
             <Link to={'posts'} className="btn text-success lighten-30 selectable text-uppercase">
               Posts
             </Link>
+            <Link to={'houses'} className="btn text-success lighten-30 selectable text-uppercase">
+              Houses
+            </Link>
           </li>
         </ul>
         <Login />
